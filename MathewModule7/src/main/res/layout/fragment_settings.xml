@@ -9,17 +9,38 @@
     tools:context=".AndersonActivity7">
 
     <TextView
-        android:id="@+id/thirdFragment"
+        android:id="@+id/clockTextView"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="Algorithms"
-        android:textColor="#43a047"
-        android:textSize="40sp"
-        android:textStyle="italic|bold"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.5"
+        android:layout_marginStart="175dp"
+        android:layout_marginTop="164dp"
+        android:text="@string/clock"
+        android:textSize="24sp"
         app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/provinceTextView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="60dp"
+        android:layout_marginTop="349dp"
+        android:layout_marginEnd="91dp"
+        android:text="@string/province"
+        android:textSize="24sp"
+        app:layout_constraintEnd_toStartOf="@+id/indexTextView"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/indexTextView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="20dp"
+        android:layout_marginTop="348dp"
+        android:text="@string/index"
+        android:textSize="24sp"
+        app:layout_constraintStart_toEndOf="@+id/provinceTextView"
         app:layout_constraintTop_toTopOf="parent" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>

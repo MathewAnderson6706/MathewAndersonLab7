@@ -12,11 +12,6 @@ import android.widget.AdapterView;
 import android.widget.ArrayAdapter;
 import android.widget.ListView;
 
-/**
- * A simple {@link Fragment} subclass.
- * Use the {@link PersonFragment#newInstance} factory method to
- * create an instance of this fragment.
- */
 public class PersonFragment extends Fragment {
 
     private ListView listView;
@@ -48,7 +43,14 @@ public class PersonFragment extends Fragment {
             {
                 listView.setSelector(android.R.color.holo_blue_dark);
                 // Pass selected concept and definition to the second fragment
-                String selectedConcept = locations[position];
+                String selectedLocation = locations[position];
+                int index = position + 1;
+                Bundle result = new Bundle();
+                Bundle result2 = new Bundle();
+                result.putString("df1", selectedLocation);
+                result2.putInt("df2", index);
+                getParentFragmentManager().setFragmentResult("dataFrom1", result);
+                getParentFragmentManager().setFragmentResult("dataFrom2", result2);
             }
         });
 

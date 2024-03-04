@@ -11,6 +11,9 @@
     <string name="purple">purple</string>
     <string name="first_name">Mathew</string>
     <string name="ok">OK</string>
+    <string name="province">PROVINCE</string>
+    <string name="index">INDEX</string>
+    <string name="clock">Clock</string>
     <string-array name="provinces_and_territories">
         <item>Newfoundland and Labrador</item>
         <item>Prince Edward Island</item>
