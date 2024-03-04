@@ -1,3 +1,4 @@
+<!--Mathew Anderson, n01436706 -->
 <resources>
     <string name="app_name">MathewLab7</string>
     <!-- TODO: Remove or change this placeholder text -->
@@ -8,6 +9,8 @@
     <string name="yellow">yellow</string>
     <string name="green">green</string>
     <string name="purple">purple</string>
+    <string name="first_name">Mathew</string>
+    <string name="ok">OK</string>
     <string-array name="provinces_and_territories">
         <item>Newfoundland and Labrador</item>
         <item>Prince Edward Island</item>

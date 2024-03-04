@@ -1,3 +1,4 @@
+//Mathew Anderson, n01436706
 package mathew.anderson.n01436706;
 
 import android.os.Bundle;
@@ -41,7 +42,7 @@ public class HomeFragment extends Fragment {
 
                 // Show toast with name + counter
                 if (counter <= 8) {
-                    String message = "Mathew" + " " + counter;
+                    String message = getString(R.string.first_name) + " " + counter;
                     Toast.makeText(getContext(), message, Toast.LENGTH_SHORT).show();
                 }
 

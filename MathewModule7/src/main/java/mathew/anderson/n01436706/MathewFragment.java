@@ -1,3 +1,4 @@
+//Mathew Anderson, n01436706
 package mathew.anderson.n01436706;
 
 import android.app.AlertDialog;
@@ -14,7 +15,7 @@ import android.widget.RadioGroup;
 
 public class MathewFragment extends Fragment {
 
-    RadioButton radioButton1, radioButton2, radioButton3, radioButton4;
+    RadioButton radioButton1, radioButton2, radioButton3;
     RadioGroup radioGroup;
 
     public MathewFragment() {
@@ -52,12 +53,12 @@ public class MathewFragment extends Fragment {
 
         builder.setIcon(R.mipmap.ic_new_image);
 
-        builder.setTitle("Mathew Anderson");
+        builder.setTitle(R.string.mathew_anderson);
 
         builder.setMessage(selectedLabel);
 
         // Set OK button
-        builder.setPositiveButton("OK", new DialogInterface.OnClickListener() {
+        builder.setPositiveButton(R.string.ok, new DialogInterface.OnClickListener() {
             @Override
             public void onClick(DialogInterface dialog, int which) {
                 // Dismiss the dialog
