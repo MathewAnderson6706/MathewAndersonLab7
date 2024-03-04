@@ -33,9 +33,9 @@ public class SettingsFragment extends Fragment {
         // Inflate the layout for this fragment
         View view = inflater.inflate(R.layout.fragment_settings, container, false);
 
-        clockTextView = view.findViewById(R.id.clockTextView);
-        provinceTextView = view.findViewById(R.id.provinceTextView);
-        indexTextView = view.findViewById(R.id.indexTextView);
+        clockTextView = view.findViewById(R.id.mathewClockTextView);
+        provinceTextView = view.findViewById(R.id.mathewProvinceTextView);
+        indexTextView = view.findViewById(R.id.mathewIndexTextView);
 
         getParentFragmentManager().setFragmentResultListener("dataFrom1", this, new FragmentResultListener() {
             @Override

@@ -1,13 +1,12 @@
-<!--Mathew Anderson, n01436706 -->
-<resources>
-    <string name="app_name">MathewLab7</string>
+<?xml version="1.0" encoding="utf-8"?>
+<resources><string name="app_name">MathewLab7</string>
     <string name="hello_blank_fragment">Hello blank fragment</string>
     <string name="todo">TODO</string>
     <string name="mathew_anderson">Mathew Anderson</string>
-    <string name="red">red</string>
-    <string name="yellow">yellow</string>
-    <string name="green">green</string>
-    <string name="purple">purple</string>
+    <string name="red">rouge</string>
+    <string name="yellow">jaune</string>
+    <string name="green">verte</string>
+    <string name="purple">violette</string>
     <string name="ok">OK</string>
     <string name="province">PROVINCE</string>
     <string name="index">INDEX</string>

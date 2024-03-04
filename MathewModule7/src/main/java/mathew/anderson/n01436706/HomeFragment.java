@@ -30,8 +30,8 @@ public class HomeFragment extends Fragment {
         // Inflate the layout for this fragment
         View view = inflater.inflate(R.layout.fragment_home, container, false);
         // Initialize views
-        progressBar = view.findViewById(R.id.progressBar);
-        imageButton = view.findViewById(R.id.imageButton);
+        progressBar = view.findViewById(R.id.mathewProgressBar);
+        imageButton = view.findViewById(R.id.mathewImageButton);
 
         // Set click listener for ImageButton
         imageButton.setOnClickListener(new View.OnClickListener() {
@@ -42,7 +42,7 @@ public class HomeFragment extends Fragment {
 
                 // Show toast with name + counter
                 if (counter <= 8) {
-                    String message = getString(R.string.first_name) + " " + counter;
+                    String message = getString(R.string.mathew) + " " + counter;
                     Toast.makeText(getContext(), message, Toast.LENGTH_SHORT).show();
                 }
 
