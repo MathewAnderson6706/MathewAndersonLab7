@@ -3,7 +3,9 @@ package mathew.anderson.n01436706;
 import androidx.annotation.NonNull;
 import androidx.appcompat.app.AppCompatActivity;
 
+import android.content.Intent;
 import android.os.Bundle;
+import android.provider.Settings;
 import android.view.Menu;
 import android.view.MenuInflater;
 import android.view.MenuItem;
@@ -39,6 +41,8 @@ public class AndersonActivity7 extends AppCompatActivity implements NavigationBa
     public boolean onOptionsItemSelected(MenuItem item) {
         int id = item.getItemId();
         if (id == R.id.real_settings) {
+            Intent intent = new Intent(Settings.ACTION_SETTINGS);
+            startActivity(intent);
             return true;
         }
         return super.onOptionsItemSelected(item);
