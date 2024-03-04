@@ -27,7 +27,7 @@ public class AndersonActivity7 extends AppCompatActivity implements NavigationBa
 
         bottomNavigationView
                 .setOnItemSelectedListener(this);
-        bottomNavigationView.setSelectedItemId(R.id.person);
+        bottomNavigationView.setSelectedItemId(R.id.home);
     }
 
     @Override
@@ -48,38 +48,38 @@ public class AndersonActivity7 extends AppCompatActivity implements NavigationBa
         return super.onOptionsItemSelected(item);
     }
 
-    FirstFragment firstFragment = new FirstFragment();
-    SecondFragment secondFragment = new SecondFragment();
-    ThirdFragment thirdFragment = new ThirdFragment();
-    FourthFragment fourthFragment = new FourthFragment();
+    PersonFragment personFragment = new PersonFragment();
+    HomeFragment homeFragment = new HomeFragment();
+    SettingsFragment settingsFragment = new SettingsFragment();
+    MathewFragment mathewFragment = new MathewFragment();
 
     @Override
     public boolean onNavigationItemSelected(@NonNull MenuItem item) {
         int itemId = item.getItemId();
 
-        if (itemId == R.id.person) {
+        if (itemId == R.id.home) {
             getSupportFragmentManager()
                     .beginTransaction()
-                    .replace(R.id.flFragment, firstFragment)
+                    .replace(R.id.flFragment, homeFragment)
                     .commit();
             return true;
-        } else if (itemId == R.id.home) {
+        } else if (itemId == R.id.person) {
             getSupportFragmentManager()
                     .beginTransaction()
-                    .replace(R.id.flFragment, secondFragment)
+                    .replace(R.id.flFragment, personFragment)
                     .commit();
             return true;
         } else if (itemId == R.id.settings) {
             getSupportFragmentManager()
                     .beginTransaction()
-                    .replace(R.id.flFragment, thirdFragment)
+                    .replace(R.id.flFragment, settingsFragment)
                     .commit();
             return true;
         }
         else if (itemId == R.id.mathew) {
             getSupportFragmentManager()
                     .beginTransaction()
-                    .replace(R.id.flFragment, fourthFragment)
+                    .replace(R.id.flFragment, mathewFragment)
                     .commit();
             return true;
         }
