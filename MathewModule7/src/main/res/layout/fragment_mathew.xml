@@ -5,20 +5,54 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    android:background="@color/yellow"
     tools:context=".AndersonActivity7">
 
     <TextView
-        android:id="@+id/firstFragment"
+        android:id="@+id/textView"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="me"
-        android:textColor="#43a047"
-        android:textSize="40sp"
-        android:textStyle="italic|bold"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.5"
+        android:layout_marginStart="112dp"
+        android:layout_marginTop="68dp"
+        android:text="@string/mathew_anderson"
+        android:textSize="20sp"
+        android:textStyle="bold"
+        android:textColor="@color/blue"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
+
+    <RadioGroup
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="41dp"
+        android:layout_marginTop="214dp"
+        android:id="@+id/mathewRadioGroup"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" >
+        <RadioButton
+            android:id="@+id/mathewRadioButton1"
+            android:layout_width="wrap_content"
+            android:text="@string/green"
+            android:textColor="@color/green"
+            android:layout_height="wrap_content">
+
+        </RadioButton>
+        <RadioButton
+            android:id="@+id/mathewRadioButton2"
+            android:layout_width="wrap_content"
+            android:text="@string/purple"
+            android:textColor="@color/colorAccent"
+            android:layout_height="wrap_content">
+
+        </RadioButton>
+        <RadioButton
+            android:id="@+id/mathewRadioButton3"
+            android:layout_width="wrap_content"
+            android:text="@string/red"
+            android:textColor="@color/colorPrimary"
+            android:layout_height="wrap_content">
+
+        </RadioButton>
+    </RadioGroup>
 
 </androidx.constraintlayout.widget.ConstraintLayout>
