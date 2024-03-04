@@ -47,6 +47,7 @@ public class AndersonActivity7 extends AppCompatActivity implements NavigationBa
     FirstFragment firstFragment = new FirstFragment();
     SecondFragment secondFragment = new SecondFragment();
     ThirdFragment thirdFragment = new ThirdFragment();
+    FourthFragment fourthFragment = new FourthFragment();
 
     @Override
     public boolean onNavigationItemSelected(@NonNull MenuItem item) {
@@ -68,6 +69,13 @@ public class AndersonActivity7 extends AppCompatActivity implements NavigationBa
             getSupportFragmentManager()
                     .beginTransaction()
                     .replace(R.id.flFragment, thirdFragment)
+                    .commit();
+            return true;
+        }
+        else if (itemId == R.id.mathew) {
+            getSupportFragmentManager()
+                    .beginTransaction()
+                    .replace(R.id.flFragment, fourthFragment)
                     .commit();
             return true;
         }

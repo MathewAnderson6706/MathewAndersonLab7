@@ -2,13 +2,17 @@
 <menu xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:android="http://schemas.android.com/apk/res/android">
     <item
-        android:id="@+id/person"
-        android:title="Person"
-        android:icon="@drawable/person"/>
-    <item
         android:id="@+id/home"
         android:title="Home"
         android:icon="@drawable/home"/>
+    <item
+        android:id="@+id/mathew"
+        android:title="Mathew"
+        android:icon="@drawable/me"/>
+    <item
+        android:id="@+id/person"
+        android:title="Person"
+        android:icon="@drawable/person"/>
     <item
         android:id="@+id/settings"
         android:title="Settings"
